@@ -7,12 +7,4 @@ import { UsersService } from './users.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  activeUsers: string[] = [];
-  inactiveUsers: string[] = [];
-
-  constructor(private usersService: UsersService) {
-    this.activeUsers = this.usersService.activeUsers;
-    this.inactiveUsers = this.usersService.inactiveUsers;
-  }
 }
